@@ -134,7 +134,7 @@ public class SimpleGrid extends JFrame
             InputStream in = getClass().getClassLoader().getResourceAsStream("gridLib/" + imageSrc);
             images[position] = ImageIO.read(in);
         } catch (Exception e) {
-            System.out.println("Image could not be read.");
+            System.out.println("Image could not be read. " + imageSrc);
             e.printStackTrace();
         }
     }
